@@ -66,3 +66,10 @@
 - Add an architecture test when introducing a boundary rule that should remain mechanically enforceable.
 - Keep changes scoped to the requested behavior. Do not combine feature work with unrelated architectural cleanup or speculative abstraction.
 - Record architectural decisions when they establish or change module ownership, dependency direction, consistency boundaries, or an important integration strategy.
+
+## Clarification and Assumptions
+
+- Ask a focused question before implementation when missing information would materially affect module ownership, public contracts, data models, security, consistency, destructive operations, or user-visible behavior.
+- Do not block on minor implementation details. State reasonable, reversible assumptions and continue.
+- If repository evidence conflicts with the requested design, stop and explain the conflict before restructuring existing code.
+- Never silently guess when the choice would be difficult to reverse.
