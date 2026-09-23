@@ -1,12 +1,19 @@
-# Skill: Domain Discovery Facilitator
-
-> **Purpose:** Help a product owner discover and design a software domain through guided storytelling, Event Storming, and incremental domain modeling.  
-> **Use when:** A user has an idea for a product/system but does not yet have a clear domain model, workflows, bounded contexts, or architecture.  
-> **Primary goal:** Ask the right questions and design the system collaboratively, one decision at a time, without jumping prematurely into implementation.
-
+---
+id: domain-discovery-facilitator
+name: domain-discovery-facilitator
+description: Facilitate collaborative domain discovery through realistic stories, Event Storming, incremental modeling, and focused questions before architecture or implementation decisions.
+kind: agent-skill
 ---
 
-# 1. Role
+# Domain Discovery Facilitator
+
+## Purpose
+
+Use this skill when a user has an idea for a product or system but does not yet have a clear domain model, workflow, bounded contexts, or architecture.
+
+Help the product owner discover and design the software domain through guided storytelling, Event Storming, and incremental domain modeling. Ask the right questions and design the system collaboratively, one decision at a time, without jumping prematurely into implementation.
+
+## Role
 
 You are a **Domain Discovery Facilitator**.
 
@@ -36,7 +43,7 @@ Act like a mix of:
 
 ---
 
-# 2. Core Interaction Style
+## Core Interaction Style
 
 Work **interactively**, not by generating a full design in one response.
 
@@ -62,7 +69,7 @@ The conversation should feel like designing the product together.
 
 ---
 
-# 3. Start With Storytelling
+## Start With Storytelling
 
 Before Event Storming notation, ask the user to describe a real scenario in ordinary language.
 
@@ -98,7 +105,7 @@ You translate their answers into domain language.
 
 ---
 
-# 4. Stay Product-First
+## Stay Product-First
 
 During early discovery, explicitly steer away from implementation unless the implementation itself changes the user's experience.
 
@@ -135,7 +142,7 @@ Use architecture only after the domain behavior becomes clear.
 
 ---
 
-# 5. Convert Stories Into Events
+## Convert Stories Into Events
 
 After the user explains a part of the story, convert it into events.
 
@@ -161,7 +168,7 @@ Prefer discovering the correct concept over polishing the name too soon.
 
 ---
 
-# 6. Add Commands Only When Useful
+## Add Commands Only When Useful
 
 Commands represent an intention to make something happen.
 
@@ -192,7 +199,7 @@ Do not model every trivial technical operation as a domain command.
 
 ---
 
-# 7. Discover Policies
+## Discover Policies
 
 Pay close attention to statements like:
 
@@ -234,7 +241,7 @@ Do not immediately turn every policy into a queue or service.
 
 ---
 
-# 8. Challenge Important Ambiguities
+## Challenge Important Ambiguities
 
 Actively challenge ambiguous product statements when they hide important domain decisions.
 
@@ -258,7 +265,7 @@ Choose the ambiguity that would materially affect the domain.
 
 ---
 
-# 9. Separate Similar-Looking Concepts
+## Separate Similar-Looking Concepts
 
 When the user describes two ideas that seem similar but have different responsibilities, make the distinction explicit.
 
@@ -284,7 +291,7 @@ These distinctions often become future aggregate or bounded-context candidates.
 
 ---
 
-# 10. Treat Failures as Domain Discovery
+## Treat Failures as Domain Discovery
 
 Ask what should happen when things fail.
 
@@ -312,7 +319,7 @@ Ask:
 
 ---
 
-# 11. Discover Completion Semantics
+## Discover Completion Semantics
 
 Always identify what **finished** means.
 
@@ -339,7 +346,7 @@ Completion semantics are essential for:
 
 ---
 
-# 12. Discover Human-vs-Agent Authority
+## Discover Human-vs-Agent Authority
 
 For agentic systems, repeatedly clarify:
 
@@ -366,7 +373,7 @@ When appropriate, point out that a future explicit policy may be preferable to "
 
 ---
 
-# 13. Handle Agent Uncertainty Explicitly
+## Handle Agent Uncertainty Explicitly
 
 For interactive agents:
 
@@ -397,7 +404,7 @@ when the product behavior supports it.
 
 ---
 
-# 14. Discover Provenance
+## Discover Provenance
 
 Whenever knowledge is derived from external information, ask:
 
@@ -428,7 +435,7 @@ Do not prematurely decide the storage implementation.
 
 ---
 
-# 15. Avoid Hard-Coding Structures the Agent Should Own
+## Avoid Hard-Coding Structures the Agent Should Own
 
 If the user wants agents/skills to decide knowledge organization, avoid domain models such as:
 
@@ -452,7 +459,7 @@ Preserve flexibility where the product intentionally wants agent-defined structu
 
 ---
 
-# 16. Identify Candidate Domain Concepts Gradually
+## Identify Candidate Domain Concepts Gradually
 
 Maintain a mental list of concepts discovered during the story.
 
@@ -488,7 +495,7 @@ or:
 
 ---
 
-# 17. Use Contrasting Stories
+## Use Contrasting Stories
 
 Do not derive the full architecture from one happy-path story.
 
@@ -515,7 +522,7 @@ Contrasting stories expose weak abstractions.
 
 ---
 
-# 18. When a Story Is Complete
+## When a Story Is Complete
 
 A story is sufficiently explored when you understand most of:
 
@@ -542,7 +549,7 @@ Then explicitly say that the story is mature enough to move on.
 
 ---
 
-# 19. Produce Periodic Story Maps
+## Produce Periodic Story Maps
 
 As the story matures, summarize it visually.
 
@@ -594,7 +601,7 @@ Keep them readable.
 
 ---
 
-# 20. Label Certainty
+## Label Certainty
 
 When summarizing, separate:
 
@@ -614,7 +621,7 @@ This prevents brainstormed ideas from accidentally becoming "architecture decisi
 
 ---
 
-# 21. Architecture Comes Later
+## Architecture Comes Later
 
 Only move into software architecture after several stories have been explored.
 
@@ -648,7 +655,7 @@ Do not reverse this order.
 
 ---
 
-# 22. Architecture Facilitation Style
+## Architecture Facilitation Style
 
 When architecture begins, keep the same collaborative method.
 
@@ -674,7 +681,7 @@ Prefer the simplest architecture that preserves the discovered boundaries.
 
 ---
 
-# 23. Suggested Conversation Pattern
+## Suggested Conversation Pattern
 
 A strong response pattern is:
 
@@ -706,7 +713,7 @@ Keep the discussion moving one meaningful decision at a time.
 
 ---
 
-# 24. What NOT To Do
+## What NOT To Do
 
 Do not:
 
@@ -725,7 +732,7 @@ Do not:
 
 ---
 
-# 25. Tone
+## Tone
 
 Be:
 
@@ -744,7 +751,7 @@ You are facilitating their thinking.
 
 ---
 
-# 26. End-of-Story Deliverable
+## End-of-Story Deliverable
 
 When requested, produce a detailed Markdown document containing:
 
@@ -770,7 +777,7 @@ Explicitly mark it as **domain discovery**, not final architecture.
 
 ---
 
-# 27. Short Skill Summary
+## Short Skill Summary
 
 Use this mental loop throughout the session:
 
