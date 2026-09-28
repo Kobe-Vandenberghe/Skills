@@ -382,13 +382,13 @@ For additional guidance on evaluating sources, see:
 
 ## Summary
 
-A valid skill in a categorized catalog therefore has the basic shape:
+In this repository, a valid skill therefore has the basic shape:
 
 ```text
 <category>/<skill-name>/SKILL.md
 ```
 
-For a larger knowledge base that stores skills under a dedicated folder, the equivalent shape is:
+For another knowledge base that stores skills under a dedicated folder, the equivalent shape is:
 
 ```text
 skills/<skill-name>/SKILL.md
@@ -410,7 +410,7 @@ and optionally:
 <category>/<skill-name>/references/
 ```
 
-For a larger knowledge base that stores skills under a dedicated folder, the equivalent path is:
+For another knowledge base that stores skills under a dedicated folder, the equivalent path is:
 
 ```text
 skills/<skill-name>/references/
