@@ -4,10 +4,21 @@ This repository is my personal catalog of reusable agent skills. Treat each skil
 
 The current categories are:
 
-- `architecture/` for design, domain modeling, and technical decision skills
-- `discovery/` for framing, brainstorming, and specification skills
-- `engineering-quality/` for implementation, review, logging, and testing skills
-- `meta/` for catalog-authoring guidance
+- `architecture/` for design, domain modeling, and technical decision skills:
+  [architecture-proportionality](architecture/architecture-proportionality/SKILL.md),
+  [assess-dotnet-architecture](architecture/assess-dotnet-architecture/SKILL.md),
+  [model-dotnet-domain](architecture/model-dotnet-domain/SKILL.md),
+  [record-technical-decision](architecture/record-technical-decision/SKILL.md)
+- `discovery/` for framing, brainstorming, and specification skills:
+  [domain-discovery-facilitator](discovery/domain-discovery-facilitator/SKILL.md),
+  [feature-brainstorming](discovery/feature-brainstorming/SKILL.md),
+  [spec-driven-development](discovery/spec-driven-development/SKILL.md)
+- `engineering-quality/` for implementation, review, logging, and testing skills:
+  [code-review-resolution](engineering-quality/code-review-resolution/SKILL.md),
+  [implement-dotnet-logging](engineering-quality/implement-dotnet-logging/SKILL.md),
+  [write-dotnet-tests](engineering-quality/write-dotnet-tests/SKILL.md)
+- `meta/` for catalog-authoring guidance:
+  [skill-writing](meta/skill-writing/SKILL.md)
 
 When creating or revising a skill, use the [skill-writing](meta/skill-writing/SKILL.md) skill first. It is the catalog's canonical guidance for deciding whether something belongs as a skill, shaping the instructions, and keeping the skill useful for modern agents. Catalog links in this repository should use category-prefixed paths such as `meta/skill-writing/SKILL.md` rather than uncategorized root-level paths.
 
