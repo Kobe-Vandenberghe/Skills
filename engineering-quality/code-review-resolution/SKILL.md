@@ -1,5 +1,6 @@
 ---
 name: code-review-resolution
+kind: agent-skill
 description: Structured protocol for reviewing changes, validating findings against the current revision, and resolving review feedback without duplicate or speculative edits.
 ---
 

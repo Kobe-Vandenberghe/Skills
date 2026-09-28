@@ -1,5 +1,6 @@
 ---
 name: spec-driven-development
+kind: agent-skill
 description: Protocol for converting an agreed feature design into an authoritative specification, phased implementation plan, and verifiable delivery sequence.
 ---
 
