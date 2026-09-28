@@ -6,7 +6,7 @@ Skills are stored as Markdown files inside the knowledge base and are discovered
 
 ## Directory Structure
 
-Each skill lives in its own directory. In a dedicated skills catalog, those directories may be top-level entries; in a larger knowledge base, they may live under `skills/`.
+Each skill lives in its own directory. In a dedicated skills catalog, those directories may be top-level entries or grouped into category subdirectories; in a larger knowledge base, they may live under `skills/`.
 
 ```text
 skills/
@@ -14,6 +14,15 @@ skills/
     ├── SKILL.md
     └── references/
         └── ...
+```
+
+```text
+catalog/
+└── <category>/
+    └── <skill-name>/
+        ├── SKILL.md
+        └── references/
+            └── ...
 ```
 
 `SKILL.md` is the entry point for the skill.
@@ -379,6 +388,12 @@ A valid skill therefore has the basic shape:
 skills/<skill-name>/SKILL.md
 ```
 
+or, in a categorized catalog:
+
+```text
+<category>/<skill-name>/SKILL.md
+```
+
 with:
 
 ```yaml
@@ -393,6 +408,12 @@ and optionally:
 
 ```text
 skills/<skill-name>/references/
+```
+
+or:
+
+```text
+<category>/<skill-name>/references/
 ```
 
 The format provides consistency while leaving the actual skill instructions flexible enough to match the capability being taught.
