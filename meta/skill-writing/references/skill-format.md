@@ -388,6 +388,8 @@ In this repository, a valid skill therefore has the basic shape:
 <category>/<skill-name>/SKILL.md
 ```
 
+This repository adopted that category-prefixed layout during the catalog reorganization, so older uncategorized root-level paths are no longer valid here.
+
 For another knowledge base that stores skills under a dedicated folder, the equivalent shape is:
 
 ```text
