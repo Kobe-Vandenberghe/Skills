@@ -1,5 +1,6 @@
 ---
 name: implement-dotnet-logging
+kind: agent-skill
 description: Design, add, repair, or review production logging in C#/.NET using structured `Microsoft.Extensions.Logging` conventions. Use when instrumenting an application flow, integration, background job, or failure path; reviewing log quality and levels; diagnosing missing context or duplicate exception logs; adding correlation and scopes; or preventing secrets and personal data from reaching logs. Place logs at meaningful application and adapter boundaries, preserve module ownership, and keep domain models logging-free. Do not use merely because code is being changed when no logging work or operational visibility is needed.
 ---
 

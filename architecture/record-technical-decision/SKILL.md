@@ -1,5 +1,6 @@
 ---
 name: record-technical-decision
+kind: agent-skill
 description: Record a consequential technical choice as a lightweight Architecture Decision Record in `docs/decisions/`. Use after multiple realistic options were considered; when making a non-obvious architecture or technology choice; when a decision affects storage, system boundaries, integrations, security, deployment, reliability, or operations; or when reversing it later would be expensive. Capture context, drivers, options, the chosen option and why it won, consequences, assumptions, revisit triggers, and related code or documentation. Do not use for routine implementation details, obvious existing conventions, easily reversible local choices, or decisions that have not actually been made.
 ---
 

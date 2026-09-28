@@ -1,5 +1,6 @@
 ---
 name: architecture-proportionality
+kind: agent-skill
 description: >
   Assess whether a feature, module, or change justifies its architectural
   complexity before designing or implementing it. Use at the start of any

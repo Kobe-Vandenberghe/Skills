@@ -1,5 +1,6 @@
 ---
 name: assess-dotnet-architecture
+kind: agent-skill
 description: Assess a .NET design before implementation by clarifying behavior, sizing architectural pressure, locating the bounded context, mapping existing project and dependency boundaries, classifying driving and driven adapters, defining transaction and consistency boundaries, comparing a few proportional designs, and recording the decision. Use when planning a substantial feature, creating or reshaping a module, moving responsibilities across boundaries, introducing a significant integration, coordinating multiple contexts, or reviewing a proposed architecture. Do not use for routine bug fixes, renames, mechanical refactors, small CRUD endpoints, or changes whose implementation follows an obvious existing pattern.
 ---
 

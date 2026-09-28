@@ -1,5 +1,6 @@
 ---
 name: write-dotnet-tests
+kind: agent-skill
 description: Write, organize, repair, and review focused C#/.NET tests that follow the repository's architecture, mirror production project and folder structure, and exercise behavior at the correct boundary. Use when adding tests for a feature or module, creating a regression test for a defect, reorganizing a .NET test suite, reviewing test quality, or deciding between domain unit, application use-case, adapter integration, API integration, and end-to-end tests. Preserve the repository's established test framework and conventions; do not use merely because production code is being discussed when no test work is requested or needed.
 ---
 

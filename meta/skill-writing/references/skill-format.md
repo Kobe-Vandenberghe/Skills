@@ -6,10 +6,18 @@ Skills are stored as Markdown files inside the knowledge base and are discovered
 
 ## Directory Structure
 
-Each skill lives in its own directory. In a dedicated skills catalog, those directories may be top-level entries; in a larger knowledge base, they may live under `skills/`.
+Each skill lives in its own directory. As a generic format rule, a dedicated skills catalog may keep those directories at the catalog root or group them into category subdirectories, and a larger knowledge base may place them under `skills/`. This repository uses the categorized form.
 
 ```text
 skills/
+└── <skill-name>/
+    ├── SKILL.md
+    └── references/
+        └── ...
+```
+
+```text
+<category>/
 └── <skill-name>/
     ├── SKILL.md
     └── references/
@@ -69,12 +77,13 @@ Minimum structure:
 
 ```yaml
 ---
-id: skill-writing
 kind: agent-skill
 name: skill-name
 description: Short description of what the skill enables the agent to do.
 ---
 ```
+
+`id` is optional. Add it when the runtime or catalog conventions need a stable identifier distinct from the directory name.
 
 ### `kind`
 
@@ -373,7 +382,15 @@ For additional guidance on evaluating sources, see:
 
 ## Summary
 
-A valid skill therefore has the basic shape:
+In this repository, a valid skill therefore has the basic shape:
+
+```text
+<category>/<skill-name>/SKILL.md
+```
+
+In this repository, skill directories use that category-prefixed layout.
+
+For another knowledge base that stores skills under a dedicated folder, the equivalent shape is:
 
 ```text
 skills/<skill-name>/SKILL.md
@@ -390,6 +407,12 @@ description: <discovery description>
 ```
 
 and optionally:
+
+```text
+<category>/<skill-name>/references/
+```
+
+For another knowledge base that stores skills under a dedicated folder, the equivalent path is:
 
 ```text
 skills/<skill-name>/references/

@@ -1,5 +1,6 @@
 ---
 name: feature-brainstorming
+kind: agent-skill
 description: Structured protocol for turning an ambiguous feature idea into an aligned, testable product and engineering direction before implementation.
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: model-dotnet-domain
+kind: agent-skill
 description: Model meaningful business behavior in .NET by defining ubiquitous language, entities and value objects, strongly typed aggregate IDs, identity equality, valid-by-construction types, aggregate ownership, state transitions, invariants, transaction boundaries, domain services, commands, results, and domain events. Use when a feature or design has nontrivial business rules, identity, lifecycle, state transitions, or consistency requirements, or when reviewing and refactoring a rich domain model. Do not use for routine CRUD, DTO mapping, infrastructure-only changes, simple validation, or behavior with no meaningful domain decisions; first determine whether DDD is justified.
 ---
 
