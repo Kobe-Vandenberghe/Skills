@@ -20,6 +20,6 @@ The current categories are:
 - `meta/` for catalog-authoring guidance:
   [skill-writing](meta/skill-writing/SKILL.md)
 
-When creating or revising a skill, use the [skill-writing](meta/skill-writing/SKILL.md) skill first. It is the catalog's canonical guidance for deciding whether something belongs as a skill, shaping the instructions, and keeping the skill useful for modern agents. Repository-level indexes and guidance now reference skills with category-prefixed paths such as `meta/skill-writing/SKILL.md`.
+When creating or revising a skill, use the [skill-writing](meta/skill-writing/SKILL.md) skill first. It is the catalog's canonical guidance for deciding whether something belongs as a skill, shaping the instructions, and keeping the skill useful for modern agents.
 
 Keep repo-level guidance short. Put domain-specific procedures inside the relevant skill directory, and put detailed supporting material in that skill's `references/` folder when it would otherwise bloat the core instructions.
