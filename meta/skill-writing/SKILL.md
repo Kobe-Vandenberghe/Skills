@@ -11,6 +11,8 @@ kind: agent-skill
 
 Use this skill when creating, reviewing, or improving an agent skill.
 
+In this catalog, the canonical path to this skill is `meta/skill-writing/SKILL.md`.
+
 A skill should teach an agent how to perform a repeatable task or apply reusable expertise. It should contain enough guidance to improve the agent's behavior beyond what can be achieved through a tool description, a repo instruction, or a small prompt fragment.
 
 For the required file structure and formatting conventions, see [Skill Format](./references/skill-format.md).
