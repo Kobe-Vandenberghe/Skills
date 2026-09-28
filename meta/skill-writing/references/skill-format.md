@@ -77,12 +77,13 @@ Minimum structure:
 
 ```yaml
 ---
-id: skill-writing
 kind: agent-skill
 name: skill-name
 description: Short description of what the skill enables the agent to do.
 ---
 ```
+
+`id` is optional. Add it when the runtime or catalog conventions need a stable identifier distinct from the directory name.
 
 ### `kind`
 
