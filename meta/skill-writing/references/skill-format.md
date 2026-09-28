@@ -6,7 +6,7 @@ Skills are stored as Markdown files inside the knowledge base and are discovered
 
 ## Directory Structure
 
-Each skill lives in its own directory. In a dedicated skills catalog, those directories may be top-level entries or grouped into category subdirectories; in a larger knowledge base, they may live under `skills/`.
+Each skill lives in its own directory. As a generic format rule, a dedicated skills catalog may keep those directories at the catalog root or group them into category subdirectories, and a larger knowledge base may place them under `skills/`. This repository uses the categorized form.
 
 ```text
 skills/
