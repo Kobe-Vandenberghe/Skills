@@ -382,16 +382,16 @@ For additional guidance on evaluating sources, see:
 
 ## Summary
 
-A valid skill therefore has the basic shape:
-
-```text
-skills/<skill-name>/SKILL.md
-```
-
-or, in a categorized catalog:
+A valid skill in a categorized catalog therefore has the basic shape:
 
 ```text
 <category>/<skill-name>/SKILL.md
+```
+
+For a larger knowledge base that stores skills under a dedicated folder, the equivalent shape is:
+
+```text
+skills/<skill-name>/SKILL.md
 ```
 
 with:
@@ -407,13 +407,13 @@ description: <discovery description>
 and optionally:
 
 ```text
-skills/<skill-name>/references/
+<category>/<skill-name>/references/
 ```
 
-or:
+For a larger knowledge base that stores skills under a dedicated folder, the equivalent path is:
 
 ```text
-<category>/<skill-name>/references/
+skills/<skill-name>/references/
 ```
 
 The format provides consistency while leaving the actual skill instructions flexible enough to match the capability being taught.
