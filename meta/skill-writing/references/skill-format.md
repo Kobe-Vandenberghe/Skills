@@ -17,12 +17,11 @@ skills/
 ```
 
 ```text
-catalog/
-└── <category>/
-    └── <skill-name>/
-        ├── SKILL.md
-        └── references/
-            └── ...
+<category>/
+└── <skill-name>/
+    ├── SKILL.md
+    └── references/
+        └── ...
 ```
 
 `SKILL.md` is the entry point for the skill.
